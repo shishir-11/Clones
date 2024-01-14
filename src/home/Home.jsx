@@ -1,10 +1,12 @@
 import React from 'react';
-import './Home.jsx';
 import Navbar from '../Components/Navbar.jsx';
+import './Home.css';
+import Featured from '../featured/Featured.jsx';
 const Home = () => {
     return (
-        <div>
-           <Navbar/> 
+        <div className='home'>
+            <Navbar/> 
+            <Featured/>
         </div>
     );
 }

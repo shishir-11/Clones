@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
-import logo from './netflix-logo.png';
+import logo from './netflix-logo-png-2562.png';
 import pfp from './pfp.jpg';
 
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 const Navbar = () => {
+    const[scrolled ,setIsScrolled] = useState(false);
+
+    window.onscroll = ()=>{
+    //    setIsScrolled(window.scrollY)
+        console.log(window.scrollY);
+        setIsScrolled(window.scrollY === 0 ? false:true)
+        return ()=> (window.onscroll = null)
+    }
     return (
-        <div className='navbar'>
+        <div className={`navbar ${scrolled ? "scrolled":""}`}>
             <div className='container'>
                 <div className='left'>
                     <img src={logo} alt=""/>

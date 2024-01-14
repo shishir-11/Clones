@@ -1,9 +1,15 @@
 .navbar{
+    position: fixed;
     width: 100%;
-    background-color: var(--main-color);
     color: white;
     font-size: 14px;
-
+    z-index: 999;
+    background: linear-gradient(to top,transparent 0%, rgba(0,0,0,0.6));
+    transition: 0.5s;
+    &.scrolled{
+        background-color: var(--main-color);
+        transition: 0.5s;
+    }
     .container{
         width: auto;
         display: flex;
@@ -49,7 +55,7 @@
             .profile{
                 .options{
                     display: none;
-                    background-color: var(--main-color);
+                    /* background-color: var(--main-color); */
                 }
                 
                 span{
