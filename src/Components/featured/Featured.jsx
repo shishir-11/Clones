@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Featured.css";
-import movie from '../Components/pfp.jpg'
+import movie from './pexels-pixabay-36717.jpg'
 import batman from './Batman Begins.png'; 
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoIcon from '@mui/icons-material/Info';
@@ -31,7 +31,7 @@ const Featured = ({type}) => {
             )}       
             <img src={movie} alt=""/>
             <div className='info'>
-                <img src={batman}/>
+                <img src={batman} alt=""/>
 
                 <span className="desc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
