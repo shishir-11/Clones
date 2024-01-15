@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../Components/navbar/Navbar.jsx';
+import Navbar from '../../Components/navbar/Navbar.jsx';
 import './Home.css';
-import Featured from '../Components/featured/Featured.jsx';
-import List from '../Components/list/List.jsx';
+import Featured from '../../Components/featured/Featured.jsx';
+import List from '../../Components/list/List.jsx';
 const Home = () => {
     return (
         <div className='home'>
