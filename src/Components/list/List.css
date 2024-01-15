@@ -1,6 +1,7 @@
 .list{
     width: 100%;
     margin-top: 10px;
+    position: relative;
 
     .listTitle{
       color:white;
@@ -35,7 +36,7 @@
             margin-top: 10px;
             display: flex;
             width: max-content;
-            align-items: center;
+            /* align-items: top; */
             transform: translateX(0px);
             transition: all 1s linear;
         }
